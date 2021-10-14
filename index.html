@@ -13,18 +13,26 @@
 </head>
 <body>
     <header>
+     <div class="headerContainer">
         <div class="imagen">
             <img src="./img/logoMain.png" alt="skytel">
         </div>
 
-        <ul>
-            <li><a href="#">Nuestro Grupo</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="#s1">Nuestro Grupo</a></li>
+                <li><a href="#s2">Contacto</a></li>
+                <li><a href="#">Aviso</a></li>
+            </ul>
+        </nav>
+
+     </div>
     </header>
     <main class="container">
         <div class="banner">
-            <video  src="./img/Comp-1.mp4" uk-video loop></video>
+           
+            <img src="./img/banner.gif" alt="">
+           
             
         </div>
 
@@ -36,42 +44,40 @@
                         <img src="./img/SkyTelCloud_PNG.png" alt="">
                         <p><span>Hola!,</span> Estamos de regreso. Aunque en realidad nunca nos fuimos. Durante estos años nos hemos transformado y hemos creado servicios con la calidad que nos caracteriza. Porque en lo que estes estamos. </p>
                     </div>
-                    <button class="button button-contact">Contáctanos</button>
+                    <button class="button button-contact inter">Contáctanos</button>
                 </div>
             </div>
             <div class="message">
                 <h2 class="color-blueSky">CENTRO DE MENSAJES</h2>
                 <form action="">
                     <input type="text" placeholder="Pin">
-                <label for="">Si no tiene clave de uso, deje la casilla en blanco</label>
-                <input type="text" placeholder="Clave de uso">
+                    <label for="">Si no tiene clave de uso, deje la casilla en blanco</label>
+                    <input type="text" placeholder="Clave de uso">
 
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                <label for="message" class="labelTA">Longitud del mensaje puede variar</label>
-                <label for="message" class="labelTA">dependiendo del equipo</label>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <label for="message" class="labelTA">Longitud del mensaje puede variar</label>
+                    <label for="message" class="labelTA">dependiendo del equipo</label>
                 
-                <div class="call">
-                    <span class="iconify phone" data-icon="carbon:phone"></span>
-                    <a href="">55 59 05 71 00</a>
-                </div>
+                    <div class="call">
+                        <span class="iconify phone" data-icon="carbon:phone"></span>
+                        <a href="">55 59 05 71 00</a>
+                    </div>
 
-                <div class="robot">
-                    <input type="checkbox">
-                    <label for="">No soy un robot</label>
-                </div>
+                    <div class="robot">
+                        <input type="checkbox">
+                        <label for="">No soy un robot</label>
+                    </div>
 
-                <div class="buttons">
-                    <button class=" button button-delete">Borrar</button>
-                    <button class="button button-send">Enviar</button>
-                </div>
+                    <div class="buttons">
+                        <button class=" button button-delete">Borrar</button>
+                        <button class="button button-send">Enviar</button>
+                    </div>
                 </form>
-                
-                
             </div>
         </section>
-        <h2 class="color-blueSky">Nuestro Grupo</h2>
+        <h2 class="color-blueSky" id="s1">Nuestro Grupo</h2>
         <div class="carousel">
-            <div class="uk-position-relative uk-visible-toggle uk-light "  tabindex="-1" uk-slider="autoplay:true autoplay-interval: 1000" >
+            <aside class="uk-position-relative uk-visible-toggle uk-light "  tabindex="-1" uk-slider="autoplay:true autoplay-interval: 1000" >
 
                 <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid" >
                     <li>
@@ -123,38 +129,41 @@
                    
                 </ul>
             
-        <!--         <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a> -->
+        
                 <a class="uk-position-center-left uk-position-small icono" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
                 <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
-                
-                
-                <!-- <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a> -->
-        
+                        
+            </aside>
+        </div>
 
         
-                
+        <div class=" about_us">
+            
+            <div class="imagen_about">
+                <img src="./img/Oficina.jpg" alt="">
+            </div>
+            
+            <div class="contacto">
+                <h3 class="mt-5 font-inter">Quiero Saber más, contáctame</h3>
+                <form action="">
+                    <input type="text" placeholder="Nombre Apellido" name="name">
+                    <input type="text" placeholder="Teléfono" name="phone">
+                    <input type="text" placeholder="Correo eléctronico" name="email">
+                    <div class="dfsb w-65 mt-5">
+                    <div class="robot">
+                        <input type="checkbox">
+                        <label for="">No soy un robot</label>
+                    </div>
+                    <button class="button button-send">Enviar</button>
+                    </div>
+                </form>
+            </div>
+
         </div>
-        </div>
-        <div class="contacto">
-            <h3 class="mt-5 font-inter">Quiero Saber más, contáctame</h3>
-            <form action="">
-                <input type="text" placeholder="Nombre Apellido" name="name">
-                <input type="text" placeholder="Teléfono" name="phone">
-                <input type="text" placeholder="Correo eléctronico" name="email">
-                <div class="dfsb w-65 mt-5">
-                <div class="robot">
-                    <input type="checkbox">
-                    <label for="">No soy un robot</label>
-                </div>
-                <button class="button button-send">Enviar</button>
-                </div>
-            </form>
-        </div>
+        
     </main>
     <footer >
-        <div class="contact-logo">
+        <div class="contact-logo" id="s2">
             <div class="info">  
                 <p>Contacto</p>
                 <p>contacto@skytel.com.mx</p>
